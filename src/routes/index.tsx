@@ -9,8 +9,8 @@ export const Route = createFileRoute('/')({
 
 // ── Config ──────────────────────────────────────────────
 const BUSINESS_NAME = 'বাংলা শপ'
-const WHATSAPP_NUMBER = '8801700000000' // Replace with real number
-const FACEBOOK_URL = 'https://facebook.com/bangla.shop' // Replace with real page
+const WHATSAPP_NUMBER = '8801834676215'
+const FACEBOOK_URL = 'https://www.facebook.com/shahadat.hossain.bhuiyan.2024'
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`
 
 // ── Types ────────────────────────────────────────────────
