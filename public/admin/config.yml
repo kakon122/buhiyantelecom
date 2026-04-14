@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+
+collections:
+  - name: "products"
+    label: "পণ্য"
+    folder: "_products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "পণ্যের নাম", name: "title", widget: "string"}
+      - {label: "দাম", name: "price", widget: "number"}
+      - {label: "বিবরণ", name: "description", widget: "text"}
+      - {label: "ক্যাটাগরি", name: "category", widget: "select", options: ["hot", "cold", "gadget"]}
+      - {label: "Emoji", name: "emoji", widget: "string", default: "🎁"}
