@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "images/uploads"
+
+collections:
+  - name: "products"
+    label: "পণ্য সমূহ"
+    folder: "_products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "পণ্যের নাম"
+        name: "title"
+        widget: "string"
+      - label: "দাম (টাকা)"
+        name: "price"
+        widget: "number"
+      - label: "আগের দাম (ঐচ্ছিক)"
+        name: "old_price"
+        widget: "number"
+        required: false
+      - label: "বিবরণ"
+        name: "description"
+        widget: "text"
+      - label: "ক্যাটাগরি"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "গরমের পণ্য 🔥", value: "hot" }
+          - { label: "শীতের পণ্য ❄️", value: "cold" }
+          - { label: "গ্যাজেট ⚡", value: "gadget" }
+      - label: "Emoji"
+        name: "emoji"
+        widget: "string"
+        default: "🎁"
+      - label: "ব্যাজ (ঐচ্ছিক)"
+        name: "badge"
+        widget: "select"
+        required: false
+        options:
+          - { label: "হট 🔥", value: "hot" }
+          - { label: "নতুন ✨", value: "new" }
+          - { label: "অফার 💰", value: "offer" }
